@@ -292,118 +292,64 @@ class _MyHomePageState extends State<MyHomePage> {
                             ] ),
                     ),
           ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 180.0,
-                        decoration: BoxDecoration(
-                          color: Colors.lightGreenAccent.withOpacity(0.3),
-                          borderRadius: BorderRadius.circular(12.0),
-                        ),
-                         child: Column(
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Container(
+                            width: 180.0,
+                            decoration: BoxDecoration(
+                              color: Colors.lightGreenAccent.withOpacity(0.3),
+                              borderRadius: BorderRadius.circular(12.0),
+                            ),
+                            child:Column(
 
-                            children: <Widget>[
-                              Align(
-                                alignment: Alignment.topCenter,
-                                child: Container(
-                                  width: 150,
-                                  height: 80,
-                                  decoration: BoxDecoration(
-                                    //borderRadius: BorderRadius.circular(10.0),
-                                    shape: BoxShape.circle,
-                                    color: Colors.white,
-                                  ),
-                                  child:
-                                  Image(
-                                    image: AssetImage('assets/cheese.png'),
-                                  ),
-                                ),
-                              ),
-                              Text(
-                                  "Fromage \n £21"
-                              )
-                          ] ),
-                ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                              width: 180.0,
+                                children: <Widget>[
+                                  Align(
+                                    alignment: Alignment.topCenter,
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(10.0),
+                                      child: Container(
+                                        width: 150,
+                                        height: 80,
+                                        decoration: BoxDecoration(
+                                          //borderRadius: BorderRadius.circular(10.0),
+                                          shape: BoxShape.circle,
+                                          color: Colors.white,
+                                        ),
+                                        child:
+                                        Image(
+                                          image: AssetImage('assets/cheese.png'),
 
-                              decoration: BoxDecoration(
-                                color: Colors.lightGreenAccent.withOpacity(0.3),
-                                borderRadius: BorderRadius.circular(12.0),
-                              ),
-                        child:Column(
-
-                              children: <Widget>[
-                                Align(
-                                  alignment: Alignment.topCenter,
-                                  child: Container(
-                                    width: 150,
-                                    height: 80,
-                                    decoration: BoxDecoration(
-                                      //borderRadius: BorderRadius.circular(10.0),
-                                      shape: BoxShape.circle,
-                                      color: Colors.white,
-                                    ),
-                                    child:
-                                    Image(
-                                      image: AssetImage('assets/burger.png'),
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                    "Hamburger \n £21"
-                                )
-                              ] )
-
-                    ),
-                        ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Container(
-                                width: 180.0,
-
-                                decoration: BoxDecoration(
-                                  color: Colors.amberAccent.withOpacity(0.3),
-                                  borderRadius: BorderRadius.circular(12.0),
-                                ),
-                          child:Column(
-
-                              children: <Widget>[
-                                Align(
-                                  alignment: Alignment.topCenter,
-                                  child: Container(
-                                    width: 150,
-                                    height: 80,
-                                    decoration: BoxDecoration(
-                                      //borderRadius: BorderRadius.circular(10.0),
-                                      shape: BoxShape.circle,
-                                      color: Colors.white,
-                                    ),
-                                    child:
-                                    Image(
-                                      image: AssetImage('assets/burger.png'),
-                                    ),
-                                  ),
-                                ),
-                                Container(
-                                  child: Column(
-                                    children: [
-                                      Text(
-                                          "Hamburger"
+                                        ),
                                       ),
-                                      Text(
-                                          "   £21"
-                                      )
-                                    ],
+                                    ),
                                   ),
-                                )
-                              ] )
+                                  Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Container(
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "cheese",
+                                              style: TextStyle(
+                                                  color: Colors.lightGreen,
+                                                  fontWeight: FontWeight.bold
+                                              ),
+                                            ),
+                                            Text(
+                                              "   £21",
+                                              style: TextStyle(
+                                                  color: Colors.lightGreen,
+                                                  fontWeight: FontWeight.bold
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      )
+                                  )
+                                ] )
 
-                    ),
-                          ),
+                        ),
+                      ),
 
 
                 ],
@@ -604,14 +550,21 @@ class _MyHomePageState extends State<MyHomePage> {
 
                                 Container(
                                   width: 50,
-                                  child: Column(
+                                  child: Row(
                                       children:<Widget>[
                                         Text("\$6",
-                                            style: TextStyle(
-                                              color: Colors.redAccent,
-                                              fontSize: 18,
-                                            )
-                                        )
+                                          style: TextStyle(
+                                            color: Colors.redAccent,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                        Text(" \$18",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 14,
+                                            decoration: TextDecoration.lineThrough,
+                                          ),
+                                        ),
                                       ]
                                   ),
                                 )
@@ -661,14 +614,21 @@ class _MyHomePageState extends State<MyHomePage> {
 
                                 Container(
                                   width: 50,
-                                  child: Column(
+                                  child: Row(
                                       children:<Widget>[
                                         Text("\$6",
-                                            style: TextStyle(
-                                              color: Colors.redAccent,
-                                              fontSize: 18,
-                                            )
-                                        )
+                                          style: TextStyle(
+                                            color: Colors.redAccent,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                        Text(" \$18",
+                                          style: TextStyle(
+                                            color: Colors.grey,
+                                            fontSize: 14,
+                                            decoration: TextDecoration.lineThrough,
+                                          ),
+                                        ),
                                       ]
                                   ),
                                 )
@@ -678,63 +638,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                           ],
                         ),
-                        Row(
-                          children: <Widget>[
-                            Container(
-                              width: 100,
-                              height: 80,
-                              decoration: BoxDecoration(
-                                  border: Border.all(),
-                                  borderRadius: BorderRadius.circular(10.0)
-                              ),
-                              child:
-                              Image(
-                                image: AssetImage('assets/taco.png'),
-                              ),
 
-
-                            ),
-
-                            Container(
-                              decoration: BoxDecoration(
-                                  color: Colors.grey,
-                                  border: Border.all(),
-                                  borderRadius: BorderRadius.circular(10.0)
-                              ),
-                              width: 100,
-                              height: 80,
-
-                              child: Column(
-                                children: <Widget>[
-                                  Text(
-                                      'Big Taco good food',
-                                      style: TextStyle(
-                                          fontStyle: FontStyle.italic
-                                      )
-                                  ),
-                                  Row(
-                                    children: [
-                                      Icon(Icons.star, size: 20.0, color: Colors.yellow),
-                                      Icon(Icons.star, size: 20.0, color: Colors.yellow),
-                                    ],
-                                  ),
-
-                                  Container(
-                                    width: 50,
-                                    child: Column(
-                                        children:<Widget>[
-                                          Text(
-                                              "£8"
-                                          )
-                                        ]
-                                    ),
-                                  )
-
-                                ],
-                              ),
-                            )
-                          ],
-                        )
 
                       ]
 
